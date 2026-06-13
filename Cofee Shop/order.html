@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="https://yt3.ggpht.com/7VF9pYMC-U10OFTCk69HT74oVqMoQ6toKoFrA2CH6clCneP7Gwo_Ndc6-efCRNT1b26oNkhqZjDEDQ=s1024-c-fcrop64=1,37fb0000c804ffff-rw-nd-v1" alt="Dean">
+        <h1>☕ 𝒟𝑒𝒶𝓃'𝓈 𝒞𝒶𝒻𝑒 🧋</h1>
+    </div>
+<nav>
+    <ul>
+    <li><a href="index.html">✨ 𝐇𝐎𝐌𝐄</a></li>
+<li><a href="about.html">🌟 𝐀𝐁𝐎𝐔𝐓</a></li>
+<li><a href="menu.html">🍔 𝐌𝐄𝐍𝐔</a></li>
+<li><a href="order.html">🛒 𝐎𝐫𝐝𝐞𝐫 𝐍𝐨𝐰 🛍️</a></li>
+</ul>
+</nav>
+
+<form class="order-form" id="cafe-order-form">
+            
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="species">Select Your Species (For kitchen safety):</label>
+                <select id="species" required>
+                    <option value="" disabled selected>Select your true identity...</option>
+                    <option value="human">Human (Normal Menu)</option>
+                    <option value="ghoul">Ghoul (Special Menu)</option>
+                    <option value="ccg">CCG Investigator (We are closed for you)</option>
+                </select>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="order-item">Choose Your Order:</label>
+                <select id="order-item" required>
+                    <option value="" disabled selected>Select an item from the menu...</option>
+                    <optgroup label="Shared Tastes">
+                        <option value="black-coffee">☕ Black Coffee (₹150)</option>
+                        <option value="espresso">☕ Espresso Shot (₹120)</option>
+                    </optgroup>
+                    <optgroup label="Human Delights">
+                        <option value="sandwich">🍔 Classic Club Sandwich (₹200)</option>
+                        <option value="cake">🍰 Chocolate Cake (₹180)</option>
+                    </optgroup>
+                    <optgroup label="The Special Menu">
+                        <option value="crimson-latte">🩸 The Crimson Latte (₹250)</option>
+                        <option value="meat-cubes">🥩 Mystery Meat Cubes (₹400)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" max="10" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Delivery Address / Ward Number:</label>
+                <input type="text" id="address" placeholder="e.g., 20th Ward, Tokyo" required>
+            </div>
+
+            <button type="submit" class="submit-btn">⚡ Confirm Order</button>
+
+            
+            <div id="success-message" style="display: none; background: #55efc4; color: #1c1c1c; padding: 15px; border-radius: 5px; margin-top: 20px; text-align: center; font-weight: bold; border-left: 5px solid #00b894;">
+                🎉 Order Confirmed! Our fastest Ghoul is dashing across the rooftops to deliver it. 🏃‍♂️💨
+            </div>
+        </form>
